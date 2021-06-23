@@ -3888,6 +3888,7 @@ class TemplatesApi
      */
     public function getDocumentWithHttpInfo($account_id, $document_id, $template_id, \DocuSign\eSign\Api\TemplatesApi\GetDocumentOptions $options = null): array
     {
+           dd([$account_id, $document_id, $template_id]);
         // verify the required parameter 'account_id' is set
         if ($account_id === null) {
             throw new \InvalidArgumentException('Missing the required parameter $account_id when calling getDocument');
